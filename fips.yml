@@ -1,0 +1,8 @@
+#
+# fips-mathc
+#
+---
+exports:
+    header-dirs: [ "mathc" ]
+    modules :
+        mathc: . 
