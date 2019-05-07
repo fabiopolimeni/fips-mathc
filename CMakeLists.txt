@@ -8,10 +8,11 @@ endif()
 
 fips_begin_lib(mathc)
 
-    include_directories(. mathc)
-    add_definitions(
-        -DMATHC_NO_POINTER_STRUCT_FUNCTIONS
-        -DMATHC_NO_STRUCT_FUNCTIONS)
+    include_directories(mathc)
+    # add_definitions(
+    #     -DMATHC_NO_POINTER_STRUCT_FUNCTIONS
+    #     -DMATHC_NO_STRUCT_FUNCTIONS
+    # )
         
     fips_dir(mathc GROUP .)
     fips_files(mathc.h mathc.c)
